@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniaturas do Espaço</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Miniaturas do espaço</h1>
+
+            <nav>
+                <ul class="menu-ul">
+                    <li class="sobre-loja">
+                        Sobre a loja
+
+                        <ul class="sub-sobre">
+                            <li>
+                                <a href="#">Imagens da loja</a>
+                            </li>
+                            <li>
+                                <a href="#">Historia</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li>Produtos</li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        <main>
+
+            <section class="sobre-loja-main container">
+                <img src="./src/helix-nebula-11156_960_720.jpg" alt="">
+                <div>
+                    <h2>Sobre a loja</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam neque itaque quo vitae incidunt
+                        numquam
+                        accusamus tenetur saepe accusantium doloribus sunt sapiente consequuntur dicta, perspiciatis,
+                        deleniti, vel
+                        facilis assumenda temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus fugiat
+                        sit iure numquam, sint maxime facere repellendus molestiae, consectetur, doloremque quisquam
+                        consequatur
+                        quae non et itaque. Nihil dolorem placeat quas.
+                    </p>
+                </div>
+            </section>
+
+            <section class="produtos container">
+                <h2>Produtos</h2>
+                <div class="cards">
+                    <div class="card-produto">
+                        <img src="./src/earth-1388003_960_720.jpg" alt="">
+                        <h3>Quadro da Terra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+                    <div class="card-produto">
+                        <img src="./src/galaxy-3608029_960_720.jpg" alt="">
+                        <h3>Quadro da Via lactea</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+                    <div class="card-produto">
+                        <img src="./src/moon-2048727_960_720.jpg" alt="">
+                        <h3>Quadro da lua</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+                    <div class="card-produto">
+                        <img src="./src/sun-11582_960_720.jpg" alt="">
+                        <h3>Quadro do Sol</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sobre-loja').click(function() {
+                $('.sub-sobre').slideToggle();
+            })
+        })
+    </script>
+</body>
+
+</html>
